@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tvColor, tvSize;
 
-        /** Called when the activity is first created. */
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onCreateContextMenu(ContextMenu menu, View v,
                                         ContextMenu.ContextMenuInfo menuInfo) {
-            // TODO Auto-generated method stub
+
             switch (v.getId()) {
                 //кейсы для цветов и размеров шрифта
                 case R.id.tvColor:
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public boolean onContextItemSelected(MenuItem item) {
-            // TODO Auto-generated method stub
+            
             switch (item.getItemId()) {
                 // пункты меню для tvColor
                 case MENU_COLOR_RED:
